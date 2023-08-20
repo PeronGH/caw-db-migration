@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "upstash_redis": "https://deno.land/x/upstash_redis@v1.22.0/mod.ts",
+    "dax": "https://deno.land/x/dax@0.34.0/mod.ts",
+    "zod": "https://deno.land/x/zod@v3.22.2/mod.ts",
+    "std/": "https://deno.land/std@0.198.0/",
+    "postgres/": "https://deno.land/x/postgres@v0.17.0/",
+    "@prisma/client/": "./prisma/client/"
+  },
+  "tasks": {
+    "prisma-init": "deno run -A npm:prisma@^4.5 init",
+    "prisma-push": "deno run -A npm:prisma@^4.5 db push --skip-generate",
+    "prisma-generate": "deno run -A npm:prisma@^4.5 generate --data-proxy"
+  },
+  "lock": false
+}

@@ -1,0 +1,4 @@
+.env
+.vscode
+dumps
+**/.DS_Store
